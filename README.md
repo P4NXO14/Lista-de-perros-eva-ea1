@@ -78,3 +78,6 @@ Lista-de-perros/
 - Integrante 2 — nombre
 
 *Proyecto original: repaso de conexión a API y manejo de eventos en JavaScript. Adaptado como base para la Evaluación Parcial N°1, DOY0101 — Ingeniería DevOps.*
+
+
+Cambio realizado para practicar 
