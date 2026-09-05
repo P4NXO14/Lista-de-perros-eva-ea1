@@ -1,0 +1,25 @@
+name: CI Basico
+
+on:
+  push:
+    branches:
+      - develop
+
+  pull_request:
+    branches:
+      - main
+
+jobs:
+  validar:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Descargar codigo
+        uses: actions/checkout@v4
+
+      - name: Verificar archivos del proyecto
+        run: |
+          test -f index.html
+          test -f style.css
+          test -f index.js
+          echo "Archivos principales encontrados correctamente"

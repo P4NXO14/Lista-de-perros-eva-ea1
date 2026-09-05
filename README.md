@@ -1,83 +1,99 @@
-# Lista de perros 🐶
+# Lista de perros
 
-La idea de este proyecto es dar un pequeño repaso sobre conexiones a una API y sobre eventos. Es una pequeña aplicación web que muestra imágenes de perros aleatorias (obtenidas desde [dog.ceo](https://dog.ceo/dog-api/)) y permite marcarlas como "me gusta" o "no me gusta".
+## Descripcion
 
-Este repositorio es la **base de trabajo** para la Evaluación Parcial N°1 de Ingeniería DevOps (DOY0101). A partir de este punto, cada pareja debe construir su propio flujo de trabajo colaborativo aplicando Git, GitHub y GitHub Actions.
+Aplicacion web que muestra imagenes aleatorias de perros y permite interactuar con ellas mediante opciones como "me gusta","no me gusta" y saltear.
 
----
+## Instalacion
 
-## 🚀 Cómo levantar el proyecto localmente
+No requiere instalacion de dependencias.
+Para ejecutar el proyecto, se debe abrir el archivo `index.html` en un navegador web.
 
-No requiere instalación de dependencias. Basta con abrir `index.html` en el navegador, o servirlo con cualquier servidor estático simple, por ejemplo:
+## Uso
 
-```bash
-npx serve .
-```
+Abrir el archivo `index.html` para visualizar la aplicacion y mostrar imagenes aleatorias de perros.
 
----
+## Estrategia de ramificacion
 
-## 🌳 Estrategia de ramificación
+Para este proyecto se utiliza GitFlow.
 
-> ✏️ **A completar por la pareja.**
-> Indiquen aquí si optaron por **GitFlow** o **Trunk-Based Development**, y justifiquen la elección considerando el tamaño del proyecto, la frecuencia de cambios esperada, y el tipo de equipo (2 personas).
+GitFlow permite separar el desarrollo de nuevas funcionalidades, correcciones y codigo estable mediante distintas ramas.
 
----
+Las principales ramas utilizadas son:
 
-## 📝 Convenciones de commits
+- `main`: contiene la version estable del proyecto.
+- `develop`: contiene los cambios en desarrollo antes de integrarlos a la version estable.
+- `feature/*`: se utiliza para desarrollar nuevas funcionalidades.
+- `hotfix/*`: se utiliza para realizar correcciones rapidas.
 
-> ✏️ **A completar por la pareja.**
-> Documenten aquí el formato que van a usar para sus mensajes de commit (ej. `feat: agrega contador de likes`, `fix: corrige error en carga de imagen`), y por qué eligieron ese formato.
+### Otros modelos de ramificacion
 
----
+- GitHub Flow: utiliza una rama principal y ramas de trabajo de corta duracion, integradas mediante Pull Requests.
+- Trunk-Based Development: los desarrolladores integran cambios frecuentemente sobre una rama principal, utilizando ramas de muy corta duracion.
 
-## 🔀 Convenciones de naming de ramas
+Se eligio GitFlow porque permite organizar claramente las funcionalidades, correcciones y versiones estables del proyecto.
 
-> ✏️ **A completar por la pareja.**
-> Ejemplo de formato a definir: `feature/<nombre-descriptivo>`, `hotfix/<nombre-descriptivo>`. Expliquen brevemente el criterio que usaron para nombrar sus ramas durante el desarrollo.
+## Convencion de ramas
 
----
+Las ramas deben utilizar los siguientes nombres:
 
-## 🔍 Estrategia de revisión (Pull Requests)
+- `feature/nombre-funcionalidad`
+- `hotfix/nombre-correccion`
 
-> ✏️ **A completar por la pareja.**
-> ¿Cómo revisaron los cambios antes de fusionarlos a `develop` o `main`? ¿Qué debía cumplir un Pull Request para ser aprobado?
+Ejemplos:
 
----
+- `feature/mejora-interfaz`
+- `feature/documentacion`
+- `hotfix/correccion-texto`
 
-## ⚙️ Automatización (CI/CD)
+## Convencion de commits
 
-> ✏️ **A completar por la pareja.**
-> Este proyecto no incluye ningún workflow de GitHub Actions todavía — es parte de su trabajo diseñarlo e implementarlo.
->
-> **Objetivo sugerido:** usar este repositorio como si tuviera un entorno de *staging* (rama `develop`) y uno de *producción* (rama `main`), automatizando la integración de cambios entre ambos. Por ejemplo:
-> - Al hacer `push` a `develop`: validar que el código no tenga errores evidentes (HTML/CSS/JS)
-> - Al abrir un Pull Request hacia `main`: ejecutar una verificación o despliegue automático
->
-> Documenten aquí qué automatizaron, por qué, y qué rol cumple dentro de un proceso CI/CD real.
+Los mensajes de commit deben ser claros y describir el cambio realizado.
 
----
+Ejemplos:
 
-## 📁 Estructura de carpetas
+- `mejora interfaz principal`
+- `corrige texto principal`
+- `corrige flujo de contribucion`
+- `agrega guia de contribucion`
 
-```
-Lista-de-perros/
-├── index.html
-├── index.js
-├── style.css
-└── README.md
-```
+## Flujo de trabajo
 
-> ✏️ **A completar por la pareja.**
-> Si agregan nuevas carpetas o archivos durante el desarrollo (ej. `.github/workflows/`), actualicen este diagrama.
+1. Actualizar la rama `develop`.
+2. Crear una rama `feature/*` o `hotfix/*`.
+3. Realizar los cambios necesarios.
+4. Crear un commit.
+5. Subir la rama a GitHub.
+6. Crear un Pull Request hacia `develop`.
+7. Revisar los cambios.
+8. Realizar el merge cuando los cambios sean correctos.
 
----
+## Revision de Pull Requests
 
-## 👥 Autores
+Antes de realizar un merge se deben revisar:
 
-- Integrante 1 — nombre
-- Integrante 2 — nombre
+- Los archivos modificados.
+- Los commits realizados.
+- Que no existan conflictos.
+- Que los cambios correspondan al objetivo de la rama.
 
-*Proyecto original: repaso de conexión a API y manejo de eventos en JavaScript. Adaptado como base para la Evaluación Parcial N°1, DOY0101 — Ingeniería DevOps.*
+Las ramas `feature/*` y `hotfix/*` se integran mediante Pull Requests.
 
+La rama `main` representa la version estable del proyecto.
 
-Cambio realizado para practicar 
+## Estructura del proyecto
+
+- `index.html`: estructura principal de la pagina.
+- `style.css`: estilos de la interfaz.
+- `index.js`: logica de la aplicacion.
+- `README.md`: documentacion principal.
+- `CONTRIBUTING.md`: guia de contribucion.
+
+## Control de versiones
+
+El proyecto utiliza Git y GitHub para mantener la trazabilidad de los cambios.
+Cada funcionalidad o correccion se desarrolla en una rama independiente y posteriormente se integra mediante Pull Requests.
+
+## Autores
+
+- Francisco Osorio
