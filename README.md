@@ -81,6 +81,16 @@ Las ramas `feature/*` y `hotfix/*` se integran mediante Pull Requests.
 
 La rama `main` representa la version estable del proyecto.
 
+## Integracion continua con GitHub Actions
+
+El proyecto utiliza GitHub Actions para automatizar la validacion de los cambios realizados en el repositorio.
+
+El workflow se ejecuta automaticamente cuando se realiza un push a la rama `develop` y cuando se crea un Pull Request hacia `main`.
+
+La accion verifica que los archivos principales del proyecto, como `index.html`, `style.css` e `index.js`, se encuentren presentes.
+
+Esta automatizacion permite verificar los cambios antes de integrarlos a la rama estable y representa una etapa basica de Integracion Continua.
+
 ## Estructura del proyecto
 
 - `index.html`: estructura principal de la pagina.
@@ -88,6 +98,7 @@ La rama `main` representa la version estable del proyecto.
 - `index.js`: logica de la aplicacion.
 - `README.md`: documentacion principal.
 - `CONTRIBUTING.md`: guia de contribucion.
+- `.github/workflows/ci.yml`: configuracion del workflow de GitHub Actions.
 
 ## Control de versiones
 
@@ -100,11 +111,10 @@ Cada funcionalidad o correccion se desarrolla en una rama independiente y poster
 
 ## Uso de IA
 
-Se utilizo chatgpt como herramienta de apoyo para orientar la configuracion del repositorio y resolver dudas durante el desarrollo del trabajo.
-
+Se utilizo ChatGPT como herramienta de apoyo para orientar la configuracion del repositorio y resolver dudas durante el desarrollo del trabajo.
 
 ## Reflexion individual
 
 - Francisco Osorio
 
-Fue motivante volver a trabajar con la terminal de VS Code, ya que por no utilizarla de forma frecuente se me habia olvidando varios de los comandos y sus funciones, ademas este trabajo me permitio obtener una base que podre utilizar en trabajos futuros, epecialmente en el uso de git y github, la creacion de ramas y la organizcion de los cambios del proyecto y pude comprender mejor el uso de distintas ramas lo que permite organizar mejor el trabajo cuando participan varias personas en un mismo proyecto, aunque en esta ocasion no contaba con un grupo con el cual poder trabajar en conjunto en el desarrollo de este trabajo, por lo que no pude experimentar completamente el trabajo colaborativo, espero poder aplicar estos conocimientos en el proximo trabajo grupal.
+Fue motivante volver a trabajar con la terminal de VS Code, ya que por no utilizarla de forma frecuente se me habia olvidado varios de los comandos y sus funciones, ademas este trabajo me permitio obtener una base que podre utilizar en trabajos futuros, especialmente en el uso de Git y GitHub, la creacion de ramas y la organizacion de los cambios del proyecto y pude comprender mejor el uso de distintas ramas lo que permite organizar mejor el trabajo cuando participan varias personas en un mismo proyecto, aunque en esta ocasion no contaba con un grupo con el cual poder trabajar en conjunto en el desarrollo de este trabajo, por lo que no pude experimentar completamente el trabajo colaborativo, espero poder aplicar estos conocimientos en el proximo trabajo grupal.
