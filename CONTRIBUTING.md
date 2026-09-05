@@ -5,7 +5,8 @@
 1. Actualizar la rama principal:
 
 ```bash
-git pull origin main
+git checkout develop
+git pull origin develop
 ```
 
 2. Crear una rama de corta duración:
@@ -27,7 +28,7 @@ git commit -m "feat: descripción del cambio"
 git push origin feature/nombre-funcionalidad
 ```
 
-5. Abrir un Pull Request hacia `main` y solicitar revisión.
+5. Abir un pull request hacia `develop` y solicitar revision.
 
 ## Convención de commits
 
