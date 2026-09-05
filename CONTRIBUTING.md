@@ -30,11 +30,16 @@ git push origin feature/nombre-funcionalidad
 
 5. Abir un pull request hacia `develop` y solicitar revision.
 
-## Convención de commits
+## Convencion de commits
 
-* `feat:` nueva funcionalidad.
-* `fix:` corrección de errores.
-* `docs:` cambios en documentación.
+Los mensajes de commit deben ser claros y describir el cambio realizado.
+
+Ejemplos:
+
+- `mejora interfaz principal`
+- `corrige texto principal`
+- `corrige flujo de contribucion`
+- `agrega guia de contribucion`
 
 ## Revisión de Pull Requests
 
