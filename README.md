@@ -97,3 +97,14 @@ Cada funcionalidad o correccion se desarrolla en una rama independiente y poster
 ## Autores
 
 - Francisco Osorio
+
+## Uso de IA
+
+Se utilizo chatgpt como herramienta de apoyo para orientar la configuracion del repositorio y resolver dudas durante el desarrollo del trabajo.
+
+
+## Reflexion individual
+
+- Francisco Osorio
+
+Fue motivante volver a trabajar con la terminal de VS Code, ya que por no utilizarla de forma frecuente se me habia olvidando varios de los comandos y sus funciones, ademas este trabajo me permitio obtener una base que podre utilizar en trabajos futuros, epecialmente en el uso de git y github, la creacion de ramas y la organizcion de los cambios del proyecto y pude comprender mejor el uso de distintas ramas lo que permite organizar mejor el trabajo cuando participan varias personas en un mismo proyecto, aunque en esta ocasion no contaba con un grupo con el cual poder trabajar en conjunto en el desarrollo de este trabajo, por lo que no pude experimentar completamente el trabajo colaborativo, espero poder aplicar estos conocimientos en el proximo trabajo grupal.
