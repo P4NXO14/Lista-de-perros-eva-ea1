@@ -1,4 +1,4 @@
-# Guia de Contribución
+# Guia de Contribucion
 
 ## Flujo de trabajo
 
@@ -9,7 +9,7 @@ git checkout develop
 git pull origin develop
 ```
 
-2. Crear una rama de corta duración:
+2. Crear una rama de corta duracion:
 
 ```bash
 git checkout -b feature/nombre-funcionalidad
@@ -19,7 +19,7 @@ git checkout -b feature/nombre-funcionalidad
 
 ```bash
 git add .
-git commit -m "feat: descripción del cambio"
+git commit -m "descripcion del cambio"
 ```
 
 4. Subir la rama al repositorio remoto:
@@ -28,7 +28,7 @@ git commit -m "feat: descripción del cambio"
 git push origin feature/nombre-funcionalidad
 ```
 
-5. Abir un pull request hacia `develop` y solicitar revision.
+5. Abrir un pull request hacia `develop` y solicitar revision.
 
 ## Convencion de commits
 
@@ -41,8 +41,8 @@ Ejemplos:
 - `corrige flujo de contribucion`
 - `agrega guia de contribucion`
 
-## Revisión de Pull Requests
+## Revision de Pull Requests
 
-Todo cambio debe ser revisado por al menos otro integrante del equipo antes de fusionarse a `main`.
+Antes de realizar un merge se deben revisar los archivos modificados, los commits realizados y que no existan conflictos.
 
-La rama `main` corresponde a la versión estable del proyecto.
+La rama `main` corresponde a la version estable del proyecto.
